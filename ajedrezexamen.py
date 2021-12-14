@@ -37,3 +37,87 @@ while z == c:
 (tableroajedrez[b])[1] = chr(0x265C)
 (tableroajedrez[c])[2] = chr(0x265C)
 
+def movimientopieza(tableroajedrez, x, y , z , a , b , c ):
+    print(tableroajedrez)
+    #movimiento para primeras torres enfrentadas
+    try:
+        if (tableroajedrez[a+1])[0] != " " and (tableroajedrez[a-1])[0] != " ":
+            print(tableroajedrez)
+            pass
+        elif(tableroajedrez[a+1])[0] == " " and (tableroajedrez[a-1])[0] == " ":
+            try:
+                if (tableroajedrez[x+1])[0] == " " :(tableroajedrez[x+1])[0] = (tableroajedrez[x])[0]
+            except:
+                pass
+                print(tableroajedrez)
+    except: 
+        pass
+
+    try:
+        if (tableroajedrez[x+1])[0] != " " and (tableroajedrez[x-1])[0] != " ":
+            print(tableroajedrez)
+            pass
+        elif(tableroajedrez[x+1])[0] == " " and (tableroajedrez[x-1])[0] == " ":
+            try:
+                if (tableroajedrez[a+1])[0] == " " :(tableroajedrez[a+1])[0] = (tableroajedrez[a])[0]
+            except:
+                pass
+                print(tableroajedrez)
+    except: 
+        pass
+
+    #movimiento para segundas torres 
+    try:
+        if (tableroajedrez[y+1])[0] != " " and (tableroajedrez[y-1])[0] != " ":
+            print(tableroajedrez)
+            pass
+        elif(tableroajedrez[y+1])[0] == " " and (tableroajedrez[y-1])[0] == " ":
+            try:
+                if (tableroajedrez[b+1])[0] == " " :(tableroajedrez[b+1])[0] = (tableroajedrez[b])[0]
+            except:
+                pass
+                print(tableroajedrez)
+    except: 
+        pass
+
+    try:
+        if (tableroajedrez[b+1])[0] != " " and (tableroajedrez[b-1])[0] != " ":
+            print(tableroajedrez)
+            pass
+        elif(tableroajedrez[b+1])[0] == " " and (tableroajedrez[b-1])[0] == " ":
+            try:
+                if (tableroajedrez[y+1])[0] == " " :(tableroajedrez[y+1])[0] = (tableroajedrez[y])[0]
+            except:
+                pass
+                print(tableroajedrez)
+    except: 
+        pass
+
+    #movimiento para terceras torres
+    try:
+        if (tableroajedrez[z+1])[0] != " " and (tableroajedrez[z-1])[0] != " ":
+            print(tableroajedrez)
+            pass
+        elif(tableroajedrez[z+1])[0] == " " and (tableroajedrez[z-1])[0] == " ":
+            try:
+                if (tableroajedrez[c+1])[0] == " " :(tableroajedrez[c+1])[0] = (tableroajedrez[c])[0]
+            except:
+                pass
+                print(tableroajedrez)
+
+
+    except: 
+        pass
+
+    try:
+        if (tableroajedrez[c+1])[0] != " " and (tableroajedrez[c-1])[0] != " ":
+            print(tableroajedrez)
+            pass
+        elif(tableroajedrez[c+1])[0] == " " and (tableroajedrez[c-1])[0] == " ":
+            try:
+                if (tableroajedrez[z+1])[0] == " " :(tableroajedrez[z+1])[0] = (tableroajedrez[z])[0]
+            except:
+                pass
+                print(tableroajedrez)
+    except: 
+        pass
