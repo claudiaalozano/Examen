@@ -46,7 +46,8 @@ def movimientopieza(tableroajedrez,a,b,c,x,y,z):
             pass
         elif(tableroajedrez[a+1])[0] == " " and (tableroajedrez[a-1])[0] == " ":
             try:
-                if (tableroajedrez[x+1])[0] == " " : (tableroajedrez[x+1])[0] = (tableroajedrez[x])[0] = (tableroajedrez[x])[0]
+                if (tableroajedrez[x+1])[0] == " " : 
+                    (tableroajedrez[x+1])[0] = (tableroajedrez[x])[0] 
             except:
                 pass
                 print(tableroajedrez)
@@ -59,7 +60,8 @@ def movimientopieza(tableroajedrez,a,b,c,x,y,z):
             pass
         elif(tableroajedrez[x+1])[0] == " " and (tableroajedrez[x-1])[0] == " ":
             try:
-                if (tableroajedrez[a+1])[0] == " " :(tableroajedrez[a+1])[0] = (tableroajedrez[a])[0] = (tableroajedrez[a])[0]
+                if (tableroajedrez[a+1])[0] == " " :
+                    (tableroajedrez[a+1])[0] = (tableroajedrez[a])[0] 
             except:
                 pass
                 print(tableroajedrez)
@@ -73,7 +75,8 @@ def movimientopieza(tableroajedrez,a,b,c,x,y,z):
             pass
         elif(tableroajedrez[y+1])[0] == " " and (tableroajedrez[y-1])[0] == " ":
             try:
-                if (tableroajedrez[b+1])[0] == " " :(tableroajedrez[b+1])[0] = (tableroajedrez[b])[0] = (tableroajedrez[b])[0] 
+                if (tableroajedrez[b+1])[0] == " " :
+                    (tableroajedrez[b+1])[0] = (tableroajedrez[b])[0] 
             except:
                 pass
                 print(tableroajedrez)
@@ -86,7 +89,8 @@ def movimientopieza(tableroajedrez,a,b,c,x,y,z):
             pass
         elif(tableroajedrez[b+1])[0] == " " and (tableroajedrez[b-1])[0] == " ":
             try:
-                if (tableroajedrez[y+1])[0] == " " :(tableroajedrez[y+1])[0] = (tableroajedrez[y])[0] = (tableroajedrez[y])[0]
+                if (tableroajedrez[y+1])[0] == " " :
+                    (tableroajedrez[y+1])[0] = (tableroajedrez[y])[0]
             except:
                 pass
                 print(tableroajedrez)
@@ -95,12 +99,13 @@ def movimientopieza(tableroajedrez,a,b,c,x,y,z):
 
     #movimiento para terceras torres
     try:
-        if (tableroajedrez[z+1])[0] != " " and (tableroajedrez[z-1])[0] != " ":
+        if (tableroajedrez[z+1])[2] != " " and (tableroajedrez[z-1])[2] != " ":
             print(tableroajedrez)
             pass
         elif(tableroajedrez[z+1])[0] == " " and (tableroajedrez[z-1])[0] == " ":
             try:
-                if (tableroajedrez[c+1])[0] == " " :(tableroajedrez[c+1])[0] = (tableroajedrez[c])[0] = (tableroajedrez[c])[0]
+                if (tableroajedrez[c+1])[0] == " " :
+                    (tableroajedrez[c+1])[0] = (tableroajedrez[c])[0] 
             except:
                 pass
                 print(tableroajedrez)
@@ -115,7 +120,8 @@ def movimientopieza(tableroajedrez,a,b,c,x,y,z):
             pass
         elif(tableroajedrez[c+1])[0] == " " and (tableroajedrez[c-1])[0] == " ":
             try:
-                if (tableroajedrez[z+1])[0] == " " :(tableroajedrez[z+1])[0] = (tableroajedrez[z])[0] = (tableroajedrez[z])[0] 
+                if (tableroajedrez[z+1])[0] == " " :
+                    (tableroajedrez[z+1])[0] = (tableroajedrez[z])[0] 
             except:
                 pass
                 print(tableroajedrez)
