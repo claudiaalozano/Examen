@@ -17,4 +17,6 @@ def minion(s):
     else:
         print("Empatados :( , volved a jugar.")
 
-        
+if __name__ == "__main__":
+    s = input("Minion elige la palabra para el juego: ")  
+    minion(s)      

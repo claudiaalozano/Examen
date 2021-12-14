@@ -4,7 +4,7 @@ tableroajedrez= [
     [" " , " " , " "],
     [" " , " " , " "],
     [" " , " " , " "],
-]
+    ]
 
 x = randint (0,2)
 y = randint (0,2)
@@ -37,7 +37,7 @@ while z == c:
 (tableroajedrez[b])[1] = chr(0x265C)
 (tableroajedrez[c])[2] = chr(0x265C)
 
-def movimientopieza(tableroajedrez, x, y , z , a , b , c ):
+def movimientopieza(tableroajedrez,a,b,c,x,y,z):
     print(tableroajedrez)
     #movimiento para primeras torres enfrentadas
     try:
@@ -46,7 +46,7 @@ def movimientopieza(tableroajedrez, x, y , z , a , b , c ):
             pass
         elif(tableroajedrez[a+1])[0] == " " and (tableroajedrez[a-1])[0] == " ":
             try:
-                if (tableroajedrez[x+1])[0] == " " :(tableroajedrez[x+1])[0] = (tableroajedrez[x])[0] = tableroajedrez[x])[0]
+                if (tableroajedrez[x+1])[0] == " " : (tableroajedrez[x+1])[0] = (tableroajedrez[x])[0] = (tableroajedrez[x])[0]
             except:
                 pass
                 print(tableroajedrez)
@@ -122,7 +122,7 @@ def movimientopieza(tableroajedrez, x, y , z , a , b , c ):
     except: 
         pass
 
-movimientopieza(tableroajedrez, x, y , z , a , b , c )
+movimientopieza(tableroajedrez,a,b,c,x,y,z)
 
 #printeo el tablero
 def printablero(tableroajedrez):
