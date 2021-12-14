@@ -130,4 +130,5 @@ def printablero(tableroajedrez):
     for tableroajedrez[contador] in tableroajedrez:
         print(tableroajedrez[contador])
         contador = contador + 1
-    printablero(tableroajedrez)
+
+printablero(tableroajedrez)
