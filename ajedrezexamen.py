@@ -121,3 +121,13 @@ def movimientopieza(tableroajedrez, x, y , z , a , b , c ):
                 print(tableroajedrez)
     except: 
         pass
+
+movimientopieza(tableroajedrez, x, y , z , a , b , c )
+
+#printeo el tablero
+def printablero(tableroajedrez):
+    contador= 0
+    for tableroajedrez[contador] in tableroajedrez:
+        print(tableroajedrez[contador])
+        contador = contador + 1
+    printablero(tableroajedrez)
