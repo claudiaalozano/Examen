@@ -136,6 +136,7 @@ def printeartablero(tableroajedrez):
 
 printeartablero(tableroajedrez)```
 
+
 CÓDIGO MINIÓN:
 ```def minion(s):
     vowels = "AEIOU"
